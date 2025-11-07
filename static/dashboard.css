@@ -1,0 +1,72 @@
+.content-container{
+    position: relative;
+    left: 290px;
+    width: calc(100% - 290px);
+    transition: all 0.5s ease;
+    padding: 20px;
+}
+.sidebar.collapsed ~ .content-container{
+    left: 90px;
+    width: calc(100% - 85px);
+}
+.content-container h2{
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+.head{
+    border-radius: 15px;
+    background-image: linear-gradient( 109.6deg,  #CBE4FF 11.2%, rgba(87,27,226,1) 96.7% );
+    padding: 40px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+.card{
+    border: 1px solid rgba(87,27,226,1);
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover{
+    background: linear-gradient( 109.6deg,  #CBE4FF 11.2%, rgba(87,27,226,1) 96.7% );
+}
+.card span{
+    font-size: 3rem;
+}
+.card h2{
+   margin-bottom: 10px;
+}
+.card p{
+    color: #333;
+}
+.question{
+    padding: 10px 0;
+}
+.answer{
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    outline: none;
+    border: 1px solid rgba(87,27,226,1);
+    resize: none;
+    border-radius: 8px;
+}
+.ans-btn{
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient( 91.2deg,  rgba(136,80,226,1) 4%, rgba(16,13,91,1) 96.5% );
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.ans-btn:hover{
+    background-image: linear-gradient( -91.2deg,  rgba(136,80,226,1) 4%, rgba(16,13,91,1) 96.5% );
+}

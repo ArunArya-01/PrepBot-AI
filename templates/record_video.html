@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Video</title>
+    <script src="https://kit.fontawesome.com/a8dce0582d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="/static/sidebar.css">
+    <style>
+        .content-container{
+            position: relative;
+            left: 290px;
+            width: calc(100% - 290px);
+            transition: all 0.5s ease;
+            padding: 20px;
+        }
+        .sidebar.collapsed ~ .content-container{
+            left: 90px;
+            width: calc(100% - 85px);
+        }
+        .content-container h2{
+            padding-top: 20px;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #video {
+            background-color: #000;
+            border-radius: 10px;
+            width: 640px;
+            height: 360px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        #uploadForm {
+            margin-top: 20px;
+        }
+
+        #uploadForm button {
+            background-image: linear-gradient( 91.2deg,  rgba(136,80,226,1) 4%, rgba(16,13,91,1) 96.5% );
+
+        }
+
+        #uploadForm button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <!-- Sidebar header -->
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="/static/img/logo.png" alt="CodingNepal">
+            </a>
+            <button class="toggler sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+            <button class="toggler menu-toggler">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">
+            <!-- Primary top nav -->
+            <ul class="nav-list primary-nav">
+                <li class="nav-item">
+                    <a href="/dashboard" class="nav-link active">
+                        <span class="nav-icon material-symbols-rounded">dashboard</span>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                    <span class="nav-tooltip">Dashboard</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/mock_test" class="nav-link">
+                        <span class="material-symbols-rounded">quiz</span>
+                        <span class="nav-label">Mock Test</span>
+                    </a>
+                    <span class="nav-tooltip">Mock Test</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/marks_history" class="nav-link">
+                        <span class="nav-icon material-symbols-rounded">group</span>
+                        <span class="nav-label">View Score</span>
+                    </a>
+                    <span class="nav-tooltip">View Score</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/history" class="nav-link">
+                        <span class="material-symbols-rounded">history</span>
+                        <span class="nav-label">History</span>
+                    </a>
+                    <span class="nav-tooltip">History</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/meetings" class="nav-link">
+                        <span class="material-symbols-rounded">view_list</span>
+                        <span class="nav-label">View Interviews</span>
+                    </a>
+                    <span class="nav-tooltip">View Interviews</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/record_video" class="nav-link">
+                        <span class="material-symbols-rounded">frame_person_mic</span>
+                        <span class="nav-label">Record video</span>
+                    </a>
+                    <span class="nav-tooltip">Record video</span>
+                </li>
+            </ul>
+            <!-- Secondary bottom nav -->
+            <ul class="nav-list secondary-nav">
+                <li class="nav-item">
+                    <a href="/logout" class="nav-link">
+                        <span class="nav-icon material-symbols-rounded">logout</span>
+                        <span class="nav-label">Logout</span>
+                    </a>
+                    <span class="nav-tooltip">Logout</span>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="content-container">
+        <div class="head">
+            <h2>Record and Submit Video</h2>
+            <p>Our AI Mock Interview service helps you prepare for your dream job by simulating real-life interview scenarios.</p>
+        </div>
+        <br>
+        <!-- Camera Preview (Muted to Prevent Echo) -->
+        <video id="video" autoplay muted></video>
+        
+        <!-- Recorded Video Preview -->
+        <video id="preview" controls hidden></video>
+
+        <div>
+            <button id="start">Start Recording</button>
+            <button id="stop" disabled>Stop Recording</button>
+            <button id="previewBtn" hidden>Preview Recording</button>
+        </div>
+
+        <form id="uploadForm" method="POST" enctype="multipart/form-data">
+            <input type="file" name="video" id="videoFile" hidden>
+            <button type="submit" disabled id="uploadBtn"><span class="material-symbols-rounded">upload</span> Upload Video</button>
+        </form>
+    </div>
+
+    <script>
+        let mediaRecorder;
+        let recordedChunks = [];
+        let recordedBlob;
+
+        document.getElementById("start").addEventListener("click", async () => {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+
+            document.getElementById("video").srcObject = stream;
+
+            // Prevent echo by muting local playback
+            const audioTracks = stream.getAudioTracks();
+            audioTracks.forEach(track => track.enabled = true); // Keep recording audio but do not play it
+
+            mediaRecorder = new MediaRecorder(stream);
+            recordedChunks = [];
+
+            mediaRecorder.ondataavailable = event => {
+                if (event.data.size > 0) {
+                    recordedChunks.push(event.data);
+                }
+            };
+
+            mediaRecorder.onstop = () => {
+                recordedBlob = new Blob(recordedChunks, { type: "video/webm" });
+
+                // Enable preview button
+                document.getElementById("previewBtn").hidden = false;
+                document.getElementById("uploadBtn").disabled = false;
+
+                // Prepare the file for upload
+                const file = new File([recordedBlob], "recorded_video.webm", { type: "video/webm" });
+                const dataTransfer = new DataTransfer();
+                dataTransfer.items.add(file);
+                document.getElementById("videoFile").files = dataTransfer.files;
+            };
+
+            mediaRecorder.start();
+            document.getElementById("start").disabled = true;
+            document.getElementById("stop").disabled = false;
+        });
+
+        document.getElementById("stop").addEventListener("click", () => {
+            mediaRecorder.stop();
+            document.getElementById("stop").disabled = true;
+            document.getElementById("start").disabled = false;
+        });
+
+        document.getElementById("previewBtn").addEventListener("click", () => {
+            const previewVideo = document.getElementById("preview");
+            previewVideo.src = URL.createObjectURL(recordedBlob);
+            previewVideo.hidden = false;
+        });
+    </script>
+</body>
+</html>

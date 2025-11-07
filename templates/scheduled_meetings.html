@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Scheduled Meetings</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="/static/sidebar.css">
+    <style>
+        .table-container {
+            max-width: 100%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-container th {
+            background-color: rgba(87,27,226,1);
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .table-container td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .table-container tr:hover td {
+            background-color: #f2f2f2;
+        }
+
+        .table-container a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+
+       
+        .table-container a:hover {
+            color: #23527c;
+        }
+        .content-container{
+            position: relative;
+            left: 290px;
+            width: calc(100% - 290px);
+            transition: all 0.5s ease;
+            padding: 20px;
+        }
+        .sidebar.collapsed ~ .content-container{
+            left: 90px;
+            width: calc(100% - 85px);
+        }
+        .content-container h2{
+            padding-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <!-- Sidebar header -->
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="/static/img/logo.png" alt="CodingNepal">
+            </a>
+            <button class="toggler sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+            <button class="toggler menu-toggler">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">
+            <!-- Primary top nav -->
+            <ul class="nav-list primary-nav">
+                <li class="nav-item">
+                    <a href="/admin/dashboard" class="nav-link">
+                        <span class="nav-icon material-symbols-rounded">dashboard</span>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                    <span class="nav-tooltip">Dashboard</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/assign_meeting" class="nav-link">
+                        <span class="material-symbols-rounded">quiz</span>
+                        <span class="nav-label">Assign Meeting</span>
+                    </a>
+                    <span class="nav-tooltip">Assign Meeting</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/scheduled_meetings" class="nav-link active">
+                        <span class="nav-icon material-symbols-rounded">group</span>
+                        <span class="nav-label">View Meetings</span>
+                    </a>
+                    <span class="nav-tooltip">View Meetings</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/videos" class="nav-link">
+                        <span class="material-symbols-rounded">animated_images</span>
+                        <span class="nav-label">View Videos</span>
+                    </a>
+                    <span class="nav-tooltip">View Videos</span>
+                </li>
+            </ul>
+            <!-- Secondary bottom nav -->
+            <ul class="nav-list secondary-nav">
+                <li class="nav-item">
+                    <a href="/admin/logout" class="nav-link">
+                        <span class="nav-icon material-symbols-rounded">logout</span>
+                        <span class="nav-label">Logout</span>
+                    </a>
+                    <span class="nav-tooltip">Logout</span>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="content-container">
+        {% block content %}
+        <div class="table-container">
+            <h2>Scheduled Meetings</h2>
+        
+            {% if meetings %}
+                <table border="1">
+                    <tr>
+                        <th>Username</th>
+                        <th>Meeting Date</th>
+                        <th>Meeting Time</th>
+                        <th>Join Link</th>
+                    </tr>
+                    {% for meeting in meetings %}
+                    <tr>
+                        <td>{{ meeting[0] }}</td>
+                        <td>{{ meeting[2] }}</td>
+                        <td>{{ meeting[3] }}</td>
+                        <td><a href="{{ meeting[1] }}" target="_blank">Join Meeting</a></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            {% else %}
+                <p>No scheduled meetings found.</p>
+            {% endif %}
+        
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

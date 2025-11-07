@@ -1,0 +1,88 @@
+.content-container{
+    position: relative;
+    left: 290px;
+    width: calc(100% - 290px);
+    transition: all 0.5s ease;
+    padding: 20px;
+}
+.sidebar.collapsed ~ .content-container{
+    left: 90px;
+    width: calc(100% - 85px);
+}
+.content-container h2{
+    padding-top: 20px;
+}
+
+/* Form Container Styles */
+.form-container {
+  max-width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Form Label Styles */
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form Input Styles */
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="time"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid rgba(87,27,226,1);
+  background: #dcedfe;
+  border-radius: 5px;
+}
+
+/* Form Checkbox Styles */
+.form-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Error Message Styles */
+.error-message {
+  color: #f00;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.line{
+    background-color: rgba(87,27,226,0.5);
+    height: 1.2px;
+    margin-top: 8px;
+}
+.btn {
+    cursor: pointer;
+    background-image: linear-gradient(91.2deg, rgb(136, 80, 226) 4%, rgb(16, 13, 91) 96.5%);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-image: linear-gradient(-91.2deg, rgb(136, 80, 226) 4%, rgb(16, 13, 91) 96.5%);
+}
+.select-users{
+    font-size: 1.5rem;
+    text-align: center;
+    background: #d0e8ff;
+    padding: 8px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Sign Up</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+        <script src="https://kit.fontawesome.com/a8dce0582d.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="container">
+        <h2>Admin Signup</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="username"><i class="fa-solid fa-user"></i> Full Name:</label>
+                <input type="text" name="username" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+                <input type="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password"><i class="fa-solid fa-lock"></i> Password:</label>
+                <input type="password" name="password" placeholder="Enter Password" required>
+            </div>
+            
+            <button type="submit">Signup</button>
+        </form>
+        <p>Already an admin? <a href="{{ url_for('admin_login') }}">Login here</a></p>
+    </div>
+</body>
+</html>

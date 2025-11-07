@@ -1,0 +1,361 @@
+category,question,answer,score
+Cloud Computing,What is Cloud Computing?,Cloud computing is the delivery of computing services over the internet.,1.0
+Cloud Computing,What is Cloud Computing?,Cloud computing provides computing resources via the internet.,0.8
+Cloud Computing,What is Cloud Computing?,It is a type of local storage.,0.0
+Cloud Computing,What are the main types of cloud computing?,"Public, Private, and Hybrid clouds.",1.0
+Cloud Computing,What are the main types of cloud computing?,It allows remote access to computing services.,0.8
+Cloud Computing,What are the main types of cloud computing?,Only involves physical servers.,0.0
+Cloud Computing,What is IaaS?,Infrastructure as a Service provides virtualized computing resources.,1.0
+Cloud Computing,What is IaaS?,A method of utilizing virtual computing infrastructure online.,0.8
+Cloud Computing,What is IaaS?,It is an operating system.,0.0
+Cloud Computing,What is PaaS?,Platform as a Service offers a development environment on the cloud.,1.0
+Cloud Computing,What is PaaS?,Cloud computing provides computing resources via the internet.,0.8
+Cloud Computing,What is PaaS?,It is a type of local storage.,0.0
+Cloud Computing,What is SaaS?,Software as a Service provides applications over the internet.,1.0
+Cloud Computing,What is SaaS?,It allows remote access to computing services.,0.8
+Cloud Computing,What is SaaS?,Only involves physical servers.,0.0
+Cloud Computing,What is a cloud service provider?,"A company offering cloud computing services, e.g., AWS, Azure, GCP.",1.0
+Cloud Computing,What is a cloud service provider?,A method of utilizing virtual computing infrastructure online.,0.8
+Cloud Computing,What is a cloud service provider?,It is an operating system.,0.0
+Cloud Computing,What is cloud storage?,Storing data remotely on the internet rather than local devices.,1.0
+Cloud Computing,What is cloud storage?,Cloud computing provides computing resources via the internet.,0.8
+Cloud Computing,What is cloud storage?,It is a type of local storage.,0.0
+Cloud Computing,What is serverless computing?,A cloud computing model where the provider manages the infrastructure.,1.0
+Cloud Computing,What is serverless computing?,It allows remote access to computing services.,0.8
+Cloud Computing,What is serverless computing?,Only involves physical servers.,0.0
+Cloud Computing,What is virtualization in cloud computing?,The creation of virtual machines for efficient resource utilization.,1.0
+Cloud Computing,What is virtualization in cloud computing?,A method of utilizing virtual computing infrastructure online.,0.8
+Cloud Computing,What is virtualization in cloud computing?,It is an operating system.,0.0
+Cloud Computing,What is the difference between private and public clouds?,Private clouds are used by a single organization; public clouds are shared.,1.0
+Cloud Computing,What is the difference between private and public clouds?,Cloud computing provides computing resources via the internet.,0.8
+Cloud Computing,What is the difference between private and public clouds?,It is a type of local storage.,0.0
+Cloud Computing,What is a hybrid cloud?,A combination of private and public clouds for flexibility.,1.0
+Cloud Computing,What is a hybrid cloud?,It allows remote access to computing services.,0.8
+Cloud Computing,What is a hybrid cloud?,Only involves physical servers.,0.0
+Cloud Computing,What is multi-cloud?,Using multiple cloud service providers for redundancy.,1.0
+Cloud Computing,What is multi-cloud?,A method of utilizing virtual computing infrastructure online.,0.8
+Cloud Computing,What is multi-cloud?,It is an operating system.,0.0
+Cloud Computing,What is edge computing?,Processing data closer to the source rather than relying on centralized cloud servers.,1.0
+Cloud Computing,What is edge computing?,Cloud computing provides computing resources via the internet.,0.8
+Cloud Computing,What is edge computing?,It is a type of local storage.,0.0
+Cloud Computing,What is cloud elasticity?,The ability to automatically scale computing resources up or down.,1.0
+Cloud Computing,What is cloud elasticity?,It allows remote access to computing services.,0.8
+Cloud Computing,What is cloud elasticity?,Only involves physical servers.,0.0
+Cloud Computing,What is a cloud-native application?,An application designed to run in a cloud environment.,1.0
+Cloud Computing,What is a cloud-native application?,A method of utilizing virtual computing infrastructure online.,0.8
+Cloud Computing,What is a cloud-native application?,It is an operating system.,0.0
+Cloud Computing,What is cloud security?,"Protecting cloud data, applications, and infrastructure from threats.",1.0
+Cloud Computing,What is cloud security?,Cloud computing provides computing resources via the internet.,0.8
+Cloud Computing,What is cloud security?,It is a type of local storage.,0.0
+Cloud Computing,What are containers in cloud computing?,"Lightweight, portable environments for running applications.",1.0
+Cloud Computing,What are containers in cloud computing?,It allows remote access to computing services.,0.8
+Cloud Computing,What are containers in cloud computing?,Only involves physical servers.,0.0
+Cloud Computing,What is Kubernetes?,An open-source container orchestration platform.,1.0
+Cloud Computing,What is Kubernetes?,A method of utilizing virtual computing infrastructure online.,0.8
+Cloud Computing,What is Kubernetes?,It is an operating system.,0.0
+Cloud Computing,What is an API gateway in cloud computing?,A tool that manages API requests in a cloud environment.,1.0
+Cloud Computing,What is an API gateway in cloud computing?,Cloud computing provides computing resources via the internet.,0.8
+Cloud Computing,What is an API gateway in cloud computing?,It is a type of local storage.,0.0
+Cloud Computing,What is a cloud CDN?,A content delivery network that accelerates content delivery via edge servers.,1.0
+Cloud Computing,What is a cloud CDN?,It allows remote access to computing services.,0.8
+Cloud Computing,What is a cloud CDN?,Only involves physical servers.,0.0
+Java,What is Java?,"Java is a high-level, object-oriented programming language.",1.0
+Java,What is Java?,Java is an object-oriented programming language.,0.8
+Java,What is Java?,It is a type of coffee.,0.0
+Java,What is JVM?,"JVM stands for Java Virtual Machine, which runs Java bytecode.",1.0
+Java,What is JVM?,A high-level programming language running on JVM.,0.8
+Java,What is JVM?,A scripting language used for web pages.,0.0
+Java,What is JRE?,Java Runtime Environment provides the libraries required to run Java applications.,1.0
+Java,What is JRE?,A language designed for platform independence.,0.8
+Java,What is JRE?,A markup language for web development.,0.0
+Java,What is JDK?,Java Development Kit includes JRE and development tools.,1.0
+Java,What is JDK?,Java is an object-oriented programming language.,0.8
+Java,What is JDK?,It is a type of coffee.,0.0
+Java,What is bytecode?,A compiled Java file that runs on the JVM.,1.0
+Java,What is bytecode?,A high-level programming language running on JVM.,0.8
+Java,What is bytecode?,A scripting language used for web pages.,0.0
+Java,What is a class in Java?,A blueprint for creating objects.,1.0
+Java,What is a class in Java?,A language designed for platform independence.,0.8
+Java,What is a class in Java?,A markup language for web development.,0.0
+Java,What is an object in Java?,An instance of a class with state and behavior.,1.0
+Java,What is an object in Java?,Java is an object-oriented programming language.,0.8
+Java,What is an object in Java?,It is a type of coffee.,0.0
+Java,What are Java data types?,"Primitive (int, double) and non-primitive (arrays, classes).",1.0
+Java,What are Java data types?,A high-level programming language running on JVM.,0.8
+Java,What are Java data types?,A scripting language used for web pages.,0.0
+Java,What is inheritance in Java?,A mechanism where a class acquires properties of another class.,1.0
+Java,What is inheritance in Java?,A language designed for platform independence.,0.8
+Java,What is inheritance in Java?,A markup language for web development.,0.0
+Java,What is polymorphism?,The ability of a function to take multiple forms.,1.0
+Java,What is polymorphism?,Java is an object-oriented programming language.,0.8
+Java,What is polymorphism?,It is a type of coffee.,0.0
+Java,What is encapsulation?,Bundling of data and methods within a class.,1.0
+Java,What is encapsulation?,A high-level programming language running on JVM.,0.8
+Java,What is encapsulation?,A scripting language used for web pages.,0.0
+Java,What is abstraction?,Hiding implementation details and showing only necessary features.,1.0
+Java,What is abstraction?,A language designed for platform independence.,0.8
+Java,What is abstraction?,A markup language for web development.,0.0
+Java,What is an interface?,A reference type in Java that defines methods but has no implementation.,1.0
+Java,What is an interface?,Java is an object-oriented programming language.,0.8
+Java,What is an interface?,It is a type of coffee.,0.0
+Java,What is the difference between abstract class and interface?,Abstract classes can have method implementations; interfaces cannot.,1.0
+Java,What is the difference between abstract class and interface?,A high-level programming language running on JVM.,0.8
+Java,What is the difference between abstract class and interface?,A scripting language used for web pages.,0.0
+Java,What are access modifiers in Java?,"Public, private, protected, and default define access control.",1.0
+Java,What are access modifiers in Java?,A language designed for platform independence.,0.8
+Java,What are access modifiers in Java?,A markup language for web development.,0.0
+Java,What is final keyword in Java?,"It prevents modification of a variable, method, or class.",1.0
+Java,What is final keyword in Java?,Java is an object-oriented programming language.,0.8
+Java,What is final keyword in Java?,It is a type of coffee.,0.0
+Java,What is exception handling?,A mechanism to handle runtime errors using try-catch blocks.,1.0
+Java,What is exception handling?,A high-level programming language running on JVM.,0.8
+Java,What is exception handling?,A scripting language used for web pages.,0.0
+Java,What is multithreading in Java?,Executing multiple threads concurrently for parallel execution.,1.0
+Java,What is multithreading in Java?,A language designed for platform independence.,0.8
+Java,What is multithreading in Java?,A markup language for web development.,0.0
+Java,What is garbage collection?,Automatic memory management by reclaiming unused objects.,1.0
+Java,What is garbage collection?,Java is an object-oriented programming language.,0.8
+Java,What is garbage collection?,It is a type of coffee.,0.0
+Java,What is the difference between HashMap and Hashtable?,HashMap is non-synchronized; Hashtable is synchronized.,1.0
+Java,What is the difference between HashMap and Hashtable?,A high-level programming language running on JVM.,0.8
+Java,What is the difference between HashMap and Hashtable?,A scripting language used for web pages.,0.0
+Full Stack,What is Full Stack Development?,It involves both front-end and back-end development.,1.0
+Full Stack,What is Full Stack Development?,Full Stack Development involves both client-side and server-side.,0.8
+Full Stack,What is Full Stack Development?,Only focuses on front-end design.,0.0
+Full Stack,What are front-end technologies?,"HTML, CSS, JavaScript, React, Angular.",1.0
+Full Stack,What are front-end technologies?,A role requiring front-end and back-end skills.,0.8
+Full Stack,What are front-end technologies?,A database management technology.,0.0
+Full Stack,What are back-end technologies?,"Node.js, Python, Java, PHP, .NET.",1.0
+Full Stack,What are back-end technologies?,Developing applications that include UI and databases.,0.8
+Full Stack,What are back-end technologies?,A specific type of software library.,0.0
+Full Stack,What is a database?,A system for storing and managing data.,1.0
+Full Stack,What is a database?,Full Stack Development involves both client-side and server-side.,0.8
+Full Stack,What is a database?,Only focuses on front-end design.,0.0
+Full Stack,What is REST API?,A way to communicate between client and server using HTTP.,1.0
+Full Stack,What is REST API?,A role requiring front-end and back-end skills.,0.8
+Full Stack,What is REST API?,A database management technology.,0.0
+Full Stack,What is MVC architecture?,Model-View-Controller separates concerns in software design.,1.0
+Full Stack,What is MVC architecture?,Developing applications that include UI and databases.,0.8
+Full Stack,What is MVC architecture?,A specific type of software library.,0.0
+Full Stack,What is CRUD?,"Create, Read, Update, Delete operations on a database.",1.0
+Full Stack,What is CRUD?,Full Stack Development involves both client-side and server-side.,0.8
+Full Stack,What is CRUD?,Only focuses on front-end design.,0.0
+Full Stack,What is Node.js?,A JavaScript runtime used for back-end development.,1.0
+Full Stack,What is Node.js?,A role requiring front-end and back-end skills.,0.8
+Full Stack,What is Node.js?,A database management technology.,0.0
+Full Stack,What is Express.js?,A web framework for Node.js.,1.0
+Full Stack,What is Express.js?,Developing applications that include UI and databases.,0.8
+Full Stack,What is Express.js?,A specific type of software library.,0.0
+Full Stack,What is React?,A JavaScript library for building user interfaces.,1.0
+Full Stack,What is React?,Full Stack Development involves both client-side and server-side.,0.8
+Full Stack,What is React?,Only focuses on front-end design.,0.0
+Full Stack,What is Angular?,A framework for building dynamic web applications.,1.0
+Full Stack,What is Angular?,A role requiring front-end and back-end skills.,0.8
+Full Stack,What is Angular?,A database management technology.,0.0
+Full Stack,What is a web server?,A server that processes HTTP requests from clients.,1.0
+Full Stack,What is a web server?,Developing applications that include UI and databases.,0.8
+Full Stack,What is a web server?,A specific type of software library.,0.0
+Full Stack,What is authentication?,Verifying user identity using credentials.,1.0
+Full Stack,What is authentication?,Full Stack Development involves both client-side and server-side.,0.8
+Full Stack,What is authentication?,Only focuses on front-end design.,0.0
+Full Stack,What is authorization?,Granting access based on permissions.,1.0
+Full Stack,What is authorization?,A role requiring front-end and back-end skills.,0.8
+Full Stack,What is authorization?,A database management technology.,0.0
+Full Stack,What is JSON?,"JavaScript Object Notation, a lightweight data format.",1.0
+Full Stack,What is JSON?,Developing applications that include UI and databases.,0.8
+Full Stack,What is JSON?,A specific type of software library.,0.0
+Full Stack,What is the difference between SQL and NoSQL?,SQL is structured; NoSQL is flexible for large-scale data.,1.0
+Full Stack,What is the difference between SQL and NoSQL?,Full Stack Development involves both client-side and server-side.,0.8
+Full Stack,What is the difference between SQL and NoSQL?,Only focuses on front-end design.,0.0
+Full Stack,What is DevOps?,A methodology that integrates development and operations.,1.0
+Full Stack,What is DevOps?,A role requiring front-end and back-end skills.,0.8
+Full Stack,What is DevOps?,A database management technology.,0.0
+Full Stack,What are microservices?,A software architecture that structures applications as a collection of services.,1.0
+Full Stack,What are microservices?,Developing applications that include UI and databases.,0.8
+Full Stack,What are microservices?,A specific type of software library.,0.0
+Full Stack,What is GraphQL?,A query language for APIs with flexible data fetching.,1.0
+Full Stack,What is GraphQL?,Full Stack Development involves both client-side and server-side.,0.8
+Full Stack,What is GraphQL?,Only focuses on front-end design.,0.0
+Full Stack,What is Docker?,A tool that allows applications to run in isolated containers.,1.0
+Full Stack,What is Docker?,A role requiring front-end and back-end skills.,0.8
+Full Stack,What is Docker?,A database management technology.,0.0
+Web Development,What is Web Development?,Web development is the process of creating websites.,1.0
+Web Development,What is Web Development?,"Web development involves building websites using HTML, CSS, and JavaScript.",0.8
+Web Development,What is Web Development?,It only involves HTML.,0.0
+Web Development,What is HTML?,HTML stands for HyperText Markup Language.,1.0
+Web Development,What is HTML?,The process of creating interactive web applications.,0.8
+Web Development,What is HTML?,A term for hosting websites.,0.0
+Web Development,What is CSS?,CSS is used for styling web pages.,1.0
+Web Development,What is CSS?,A field that includes front-end and back-end web development.,0.8
+Web Development,What is CSS?,The process of making desktop applications.,0.0
+Web Development,What is JavaScript?,JavaScript is used for adding interactivity to web pages.,1.0
+Web Development,What is JavaScript?,"Web development involves building websites using HTML, CSS, and JavaScript.",0.8
+Web Development,What is JavaScript?,It only involves HTML.,0.0
+Web Development,What is responsive design?,A design approach that ensures websites work on all devices.,1.0
+Web Development,What is responsive design?,The process of creating interactive web applications.,0.8
+Web Development,What is responsive design?,A term for hosting websites.,0.0
+Web Development,What is Bootstrap?,A CSS framework for responsive web design.,1.0
+Web Development,What is Bootstrap?,A field that includes front-end and back-end web development.,0.8
+Web Development,What is Bootstrap?,The process of making desktop applications.,0.0
+Web Development,What is a web framework?,"A framework that simplifies web development (e.g., React, Angular).",1.0
+Web Development,What is a web framework?,"Web development involves building websites using HTML, CSS, and JavaScript.",0.8
+Web Development,What is a web framework?,It only involves HTML.,0.0
+Web Development,What is SEO?,Search Engine Optimization improves website visibility in search engines.,1.0
+Web Development,What is SEO?,The process of creating interactive web applications.,0.8
+Web Development,What is SEO?,A term for hosting websites.,0.0
+Web Development,What is AJAX?,A technique for asynchronous web requests without refreshing pages.,1.0
+Web Development,What is AJAX?,A field that includes front-end and back-end web development.,0.8
+Web Development,What is AJAX?,The process of making desktop applications.,0.0
+Web Development,What is a CMS?,Content Management System like WordPress for managing website content.,1.0
+Web Development,What is a CMS?,"Web development involves building websites using HTML, CSS, and JavaScript.",0.8
+Web Development,What is a CMS?,It only involves HTML.,0.0
+Web Development,What is a web API?,An interface that allows communication between different applications.,1.0
+Web Development,What is a web API?,The process of creating interactive web applications.,0.8
+Web Development,What is a web API?,A term for hosting websites.,0.0
+Web Development,What is a cookie?,A small data file stored by browsers for user tracking.,1.0
+Web Development,What is a cookie?,A field that includes front-end and back-end web development.,0.8
+Web Development,What is a cookie?,The process of making desktop applications.,0.0
+Web Development,What is local storage?,A browser feature for storing data persistently.,1.0
+Web Development,What is local storage?,"Web development involves building websites using HTML, CSS, and JavaScript.",0.8
+Web Development,What is local storage?,It only involves HTML.,0.0
+Web Development,What is CORS?,Cross-Origin Resource Sharing allows web resources to be accessed from different domains.,1.0
+Web Development,What is CORS?,The process of creating interactive web applications.,0.8
+Web Development,What is CORS?,A term for hosting websites.,0.0
+Web Development,What is a progressive web app (PWA)?,A web application that works offline and behaves like a native app.,1.0
+Web Development,What is a progressive web app (PWA)?,A field that includes front-end and back-end web development.,0.8
+Web Development,What is a progressive web app (PWA)?,The process of making desktop applications.,0.0
+Web Development,What is a single-page application (SPA)?,A web app that loads a single HTML page dynamically.,1.0
+Web Development,What is a single-page application (SPA)?,"Web development involves building websites using HTML, CSS, and JavaScript.",0.8
+Web Development,What is a single-page application (SPA)?,It only involves HTML.,0.0
+Web Development,What is HTTP?,HyperText Transfer Protocol governs communication between clients and servers.,1.0
+Web Development,What is HTTP?,The process of creating interactive web applications.,0.8
+Web Development,What is HTTP?,A term for hosting websites.,0.0
+Web Development,What is HTTPS?,A secure version of HTTP that encrypts data transmission.,1.0
+Web Development,What is HTTPS?,A field that includes front-end and back-end web development.,0.8
+Web Development,What is HTTPS?,The process of making desktop applications.,0.0
+Web Development,What is DNS?,Domain Name System translates domain names into IP addresses.,1.0
+Web Development,What is DNS?,"Web development involves building websites using HTML, CSS, and JavaScript.",0.8
+Web Development,What is DNS?,It only involves HTML.,0.0
+Web Development,What is a web socket?,A protocol for real-time bidirectional communication between client and server.,1.0
+Web Development,What is a web socket?,The process of creating interactive web applications.,0.8
+Web Development,What is a web socket?,A term for hosting websites.,0.0
+CSS,What is CSS?,CSS stands for Cascading Style Sheets and is used for styling web pages.,1.0
+CSS,What is CSS?,CSS is used for styling web pages using selectors and properties.,0.8
+CSS,What is CSS?,CSS is a programming language for building websites.,0.0
+CSS,What are the different types of CSS?,"Inline, Internal, and External CSS.",1.0
+CSS,What are the different types of CSS?,It includes rules to define how HTML elements are displayed.,0.8
+CSS,What are the different types of CSS?,CSS is used for writing server-side scripts.,0.0
+CSS,"What is the difference between relative, absolute, and fixed positioning in CSS?","Relative is based on its normal position, absolute is based on the nearest positioned ancestor, and fixed is relative to the viewport.",1.0
+CSS,"What is the difference between relative, absolute, and fixed positioning in CSS?",A language for adding styles like color and layout to webpages.,0.8
+CSS,"What is the difference between relative, absolute, and fixed positioning in CSS?",CSS is a markup language like HTML.,0.0
+CSS,What is Flexbox in CSS?,A layout model that allows responsive arrangement of elements in a container.,1.0
+CSS,What is Flexbox in CSS?,CSS is used for styling web pages using selectors and properties.,0.8
+CSS,What is Flexbox in CSS?,CSS is a programming language for building websites.,0.0
+CSS,What is Grid Layout in CSS?,A two-dimensional layout system for designing web pages.,1.0
+CSS,What is Grid Layout in CSS?,It includes rules to define how HTML elements are displayed.,0.8
+CSS,What is Grid Layout in CSS?,CSS is used for writing server-side scripts.,0.0
+CSS,What is the difference between rem and em units in CSS?,"rem is based on the root element's font size, while em is based on the parent element's font size.",1.0
+CSS,What is the difference between rem and em units in CSS?,A language for adding styles like color and layout to webpages.,0.8
+CSS,What is the difference between rem and em units in CSS?,CSS is a markup language like HTML.,0.0
+CSS,What is a media query in CSS?,A feature that allows CSS to adapt based on screen size and resolution.,1.0
+CSS,What is a media query in CSS?,CSS is used for styling web pages using selectors and properties.,0.8
+CSS,What is a media query in CSS?,CSS is a programming language for building websites.,0.0
+CSS,What is z-index in CSS?,A property that controls the vertical stacking order of elements.,1.0
+CSS,What is z-index in CSS?,It includes rules to define how HTML elements are displayed.,0.8
+CSS,What is z-index in CSS?,CSS is used for writing server-side scripts.,0.0
+CSS,What is the difference between class and ID selectors in CSS?,"A class can be used on multiple elements, while an ID is unique to a single element.",1.0
+CSS,What is the difference between class and ID selectors in CSS?,A language for adding styles like color and layout to webpages.,0.8
+CSS,What is the difference between class and ID selectors in CSS?,CSS is a markup language like HTML.,0.0
+CSS,What is pseudo-class in CSS?,A keyword added to a selector that defines a special state of an element.,1.0
+CSS,What is pseudo-class in CSS?,CSS is used for styling web pages using selectors and properties.,0.8
+CSS,What is pseudo-class in CSS?,CSS is a programming language for building websites.,0.0
+CSS,What is a pseudo-element in CSS?,"A keyword that allows styling of specific parts of an element, such as ::before and ::after.",1.0
+CSS,What is a pseudo-element in CSS?,It includes rules to define how HTML elements are displayed.,0.8
+CSS,What is a pseudo-element in CSS?,CSS is used for writing server-side scripts.,0.0
+CSS,What is box model in CSS?,"The concept of elements having margin, border, padding, and content areas.",1.0
+CSS,What is box model in CSS?,A language for adding styles like color and layout to webpages.,0.8
+CSS,What is box model in CSS?,CSS is a markup language like HTML.,0.0
+CSS,What is the difference between max-width and min-width in CSS?,"max-width sets the maximum width an element can have, while min-width sets the minimum width.",1.0
+CSS,What is the difference between max-width and min-width in CSS?,CSS is used for styling web pages using selectors and properties.,0.8
+CSS,What is the difference between max-width and min-width in CSS?,CSS is a programming language for building websites.,0.0
+CSS,What is the difference between visibility: hidden and display: none in CSS?,"visibility: hidden hides the element but keeps its space, while display: none removes it completely.",1.0
+CSS,What is the difference between visibility: hidden and display: none in CSS?,It includes rules to define how HTML elements are displayed.,0.8
+CSS,What is the difference between visibility: hidden and display: none in CSS?,CSS is used for writing server-side scripts.,0.0
+CSS,What is transition in CSS?,A property that allows smooth animations between states of an element.,1.0
+CSS,What is transition in CSS?,A language for adding styles like color and layout to webpages.,0.8
+CSS,What is transition in CSS?,CSS is a markup language like HTML.,0.0
+CSS,What is animation in CSS?,A method to animate HTML elements using keyframes.,1.0
+CSS,What is animation in CSS?,CSS is used for styling web pages using selectors and properties.,0.8
+CSS,What is animation in CSS?,CSS is a programming language for building websites.,0.0
+CSS,What is hover effect in CSS?,A styling change that occurs when a user hovers over an element.,1.0
+CSS,What is hover effect in CSS?,It includes rules to define how HTML elements are displayed.,0.8
+CSS,What is hover effect in CSS?,CSS is used for writing server-side scripts.,0.0
+CSS,What is the difference between relative and absolute units in CSS?,"Relative units depend on the context (e.g., %, em), while absolute units remain fixed (e.g., px, cm).",1.0
+CSS,What is the difference between relative and absolute units in CSS?,A language for adding styles like color and layout to webpages.,0.8
+CSS,What is the difference between relative and absolute units in CSS?,CSS is a markup language like HTML.,0.0
+CSS,What is the difference between float and flexbox in CSS?,"Float is an old positioning method, while flexbox is a modern, flexible layout model.",1.0
+CSS,What is the difference between float and flexbox in CSS?,CSS is used for styling web pages using selectors and properties.,0.8
+CSS,What is the difference between float and flexbox in CSS?,CSS is a programming language for building websites.,0.0
+CSS,What is opacity in CSS?,A property that defines the transparency level of an element.,1.0
+CSS,What is opacity in CSS?,It includes rules to define how HTML elements are displayed.,0.8
+CSS,What is opacity in CSS?,CSS is used for writing server-side scripts.,0.0
+JavaScript,What is JavaScript?,JavaScript is a programming language used for making web pages interactive.,1.0
+JavaScript,What is JavaScript?,JavaScript is a language for adding interactivity to web pages.,0.8
+JavaScript,What is JavaScript?,JavaScript is the same as Java.,0.0
+JavaScript,"What is the difference between var, let, and const in JavaScript?","var has function scope, let has block scope, and const is immutable.",1.0
+JavaScript,"What is the difference between var, let, and const in JavaScript?",A scripting language used for dynamic content on websites.,0.8
+JavaScript,"What is the difference between var, let, and const in JavaScript?",JavaScript is only used for backend development.,0.0
+JavaScript,What is an arrow function in JavaScript?,A concise function syntax introduced in ES6.,1.0
+JavaScript,What is an arrow function in JavaScript?,A high-level programming language used in web development.,0.8
+JavaScript,What is an arrow function in JavaScript?,JavaScript is a database management language.,0.0
+JavaScript,What is the difference between == and === in JavaScript?,"== compares values, while === compares both value and type.",1.0
+JavaScript,What is the difference between == and === in JavaScript?,JavaScript is a language for adding interactivity to web pages.,0.8
+JavaScript,What is the difference between == and === in JavaScript?,JavaScript is the same as Java.,0.0
+JavaScript,What are JavaScript closures?,A function that remembers the variables from its outer scope even after execution.,1.0
+JavaScript,What are JavaScript closures?,A scripting language used for dynamic content on websites.,0.8
+JavaScript,What are JavaScript closures?,JavaScript is only used for backend development.,0.0
+JavaScript,What is the event loop in JavaScript?,A mechanism that handles asynchronous operations in JavaScript.,1.0
+JavaScript,What is the event loop in JavaScript?,A high-level programming language used in web development.,0.8
+JavaScript,What is the event loop in JavaScript?,JavaScript is a database management language.,0.0
+JavaScript,What is a promise in JavaScript?,An object representing the eventual completion or failure of an asynchronous operation.,1.0
+JavaScript,What is a promise in JavaScript?,JavaScript is a language for adding interactivity to web pages.,0.8
+JavaScript,What is a promise in JavaScript?,JavaScript is the same as Java.,0.0
+JavaScript,What is async/await in JavaScript?,A syntax that allows handling asynchronous code in a synchronous-like manner.,1.0
+JavaScript,What is async/await in JavaScript?,A scripting language used for dynamic content on websites.,0.8
+JavaScript,What is async/await in JavaScript?,JavaScript is only used for backend development.,0.0
+JavaScript,What is a callback function in JavaScript?,A function passed as an argument to another function and executed later.,1.0
+JavaScript,What is a callback function in JavaScript?,A high-level programming language used in web development.,0.8
+JavaScript,What is a callback function in JavaScript?,JavaScript is a database management language.,0.0
+JavaScript,What is the DOM in JavaScript?,"The Document Object Model, which represents the structure of a webpage.",1.0
+JavaScript,What is the DOM in JavaScript?,JavaScript is a language for adding interactivity to web pages.,0.8
+JavaScript,What is the DOM in JavaScript?,JavaScript is the same as Java.,0.0
+JavaScript,"What is the difference between localStorage, sessionStorage, and cookies?","localStorage stores data permanently, sessionStorage for a session, and cookies have expiration dates.",1.0
+JavaScript,"What is the difference between localStorage, sessionStorage, and cookies?",A scripting language used for dynamic content on websites.,0.8
+JavaScript,"What is the difference between localStorage, sessionStorage, and cookies?",JavaScript is only used for backend development.,0.0
+JavaScript,What is the difference between null and undefined in JavaScript?,"null represents an assigned empty value, while undefined means a variable has been declared but not assigned.",1.0
+JavaScript,What is the difference between null and undefined in JavaScript?,A high-level programming language used in web development.,0.8
+JavaScript,What is the difference between null and undefined in JavaScript?,JavaScript is a database management language.,0.0
+JavaScript,What is hoisting in JavaScript?,A behavior where function and variable declarations are moved to the top of their scope.,1.0
+JavaScript,What is hoisting in JavaScript?,JavaScript is a language for adding interactivity to web pages.,0.8
+JavaScript,What is hoisting in JavaScript?,JavaScript is the same as Java.,0.0
+JavaScript,What is the difference between synchronous and asynchronous JavaScript?,"Synchronous code runs sequentially, while asynchronous code allows tasks to run independently.",1.0
+JavaScript,What is the difference between synchronous and asynchronous JavaScript?,A scripting language used for dynamic content on websites.,0.8
+JavaScript,What is the difference between synchronous and asynchronous JavaScript?,JavaScript is only used for backend development.,0.0
+JavaScript,What is the spread operator in JavaScript?,A syntax that expands iterable elements into individual elements.,1.0
+JavaScript,What is the spread operator in JavaScript?,A high-level programming language used in web development.,0.8
+JavaScript,What is the spread operator in JavaScript?,JavaScript is a database management language.,0.0
+JavaScript,What is destructuring in JavaScript?,A feature that allows unpacking values from arrays or objects into separate variables.,1.0
+JavaScript,What is destructuring in JavaScript?,JavaScript is a language for adding interactivity to web pages.,0.8
+JavaScript,What is destructuring in JavaScript?,JavaScript is the same as Java.,0.0
+JavaScript,What is a JavaScript module?,A reusable piece of code that can be imported and exported.,1.0
+JavaScript,What is a JavaScript module?,A scripting language used for dynamic content on websites.,0.8
+JavaScript,What is a JavaScript module?,JavaScript is only used for backend development.,0.0
+JavaScript,What is an IIFE in JavaScript?,"An Immediately Invoked Function Expression, which runs as soon as it's defined.",1.0
+JavaScript,What is an IIFE in JavaScript?,A high-level programming language used in web development.,0.8
+JavaScript,What is an IIFE in JavaScript?,JavaScript is a database management language.,0.0
+JavaScript,What is debounce and throttle in JavaScript?,"Debounce delays function execution, while throttle limits the number of executions over time.",1.0
+JavaScript,What is debounce and throttle in JavaScript?,JavaScript is a language for adding interactivity to web pages.,0.8
+JavaScript,What is debounce and throttle in JavaScript?,JavaScript is the same as Java.,0.0
+JavaScript,What is JSON in JavaScript?,"JavaScript Object Notation, a format for storing and transporting data.",1.0
+JavaScript,What is JSON in JavaScript?,A scripting language used for dynamic content on websites.,0.8
+JavaScript,What is JSON in JavaScript?,JavaScript is only used for backend development.,0.0

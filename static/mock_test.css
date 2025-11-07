@@ -1,0 +1,115 @@
+.content-container{
+    position: relative;
+    left: 290px;
+    width: calc(100% - 290px);
+    transition: all 0.5s ease;
+    padding: 20px;
+}
+.sidebar.collapsed ~ .content-container{
+    left: 90px;
+    width: calc(100% - 85px);
+}
+/* Form Container */
+.form-container {
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid rgba(87,27,226,1);
+    border-radius: 10px;
+}
+
+/* Form Header */
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-header h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Categories Section */
+.categories-section {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.categories-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.category-label {
+    display: block;
+    border: 1px solid rgba(87,27,226,1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-label:hover{
+    background-image: linear-gradient( 91.2deg,  rgba(136,80,226,1) 4%, rgba(16,13,91,1) 96.5% );
+    color: #fff;
+}
+
+.category-label input[type="checkbox"] {
+    display: none;
+}
+
+.category-label span {
+    display: block;
+    padding: 10px;
+}
+
+.category-label input[type="checkbox"]:checked + span {
+    background-image: linear-gradient( 91.2deg,  rgba(136,80,226,1) 4%, rgba(16,13,91,1) 96.5% );
+    color: #fff;
+}
+
+.num-questions-section{
+   border: 2px solid rgba(136,80,226,1);
+   padding: 10px;
+   border-radius: 10px;
+}
+.num-questions-section h3{
+    color: rgba(136,80,226,1);
+}
+.num-questions-section input{
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    outline-color: rgba(136,80,226,1);
+    background-color: rgba(136,80,226,0.2);
+    margin: 10px 0;
+}
+.btn{
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient( 91.2deg,  rgba(136,80,226,1) 4%, rgba(16,13,91,1) 96.5% );
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-image: linear-gradient( -91.2deg,  rgba(136,80,226,1) 4%, rgba(16,13,91,1) 96.5% );
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+      margin: 20px auto;
+    }
+}
+  
+@media (max-width: 480px) {
+    .form-container {
+      margin: 10px auto;
+    }
+    .num-questions-section input[type="number"] {
+      width: 100%;
+    }
+}

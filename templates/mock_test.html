@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test Setup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/mock_test.css') }}">
+    <script src="https://kit.fontawesome.com/a8dce0582d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="/static/sidebar.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <!-- Sidebar header -->
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="/static/img/logo.png" alt="CodingNepal">
+            </a>
+            <button class="toggler sidebar-toggler">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+            <button class="toggler menu-toggler">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">
+            <!-- Primary top nav -->
+            <ul class="nav-list primary-nav">
+                <li class="nav-item">
+                    <a href="/dashboard" class="nav-link">
+                        <span class="nav-icon material-symbols-rounded">dashboard</span>
+                        <span class="nav-label">Dashboard</span>
+                    </a>
+                    <span class="nav-tooltip">Dashboard</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/mock_test" class="nav-link">
+                        <span class="material-symbols-rounded">quiz</span>
+                        <span class="nav-label">Mock Test</span>
+                    </a>
+                    <span class="nav-tooltip">Mock Test</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/marks_history" class="nav-link">
+                        <span class="nav-icon material-symbols-rounded">group</span>
+                        <span class="nav-label">View Score</span>
+                    </a>
+                    <span class="nav-tooltip">View Score</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/history" class="nav-link">
+                        <span class="material-symbols-rounded">history</span>
+                        <span class="nav-label">History</span>
+                    </a>
+                    <span class="nav-tooltip">History</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/meetings" class="nav-link">
+                        <span class="material-symbols-rounded">view_list</span>
+                        <span class="nav-label">View Interviews</span>
+                    </a>
+                    <span class="nav-tooltip">View Interviews</span>
+                </li>
+                <li class="nav-item">
+                    <a href="/record_video" class="nav-link">
+                        <span class="material-symbols-rounded">frame_person_mic</span>
+                        <span class="nav-label">Record video</span>
+                    </a>
+                    <span class="nav-tooltip">Record video</span>
+                </li>
+            </ul>
+            <!-- Secondary bottom nav -->
+            <ul class="nav-list secondary-nav">
+                <li class="nav-item">
+                    <a href="/logout" class="nav-link">
+                        <span class="nav-icon material-symbols-rounded">logout</span>
+                        <span class="nav-label">Logout</span>
+                    </a>
+                    <span class="nav-tooltip">Logout</span>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="content-container">
+        <div class="head">
+            <h2>AI Mock Test</h2>
+            <p>Our AI Mock Interview service helps you prepare for your dream job by simulating real-life interview scenarios.</p>
+        </div>
+       
+        <form method="POST" class="form-container">
+            <div class="form-header">
+              <h3>Select Categories:</h3>
+            </div>
+            <div class="categories-section">
+                {% for category in categories %}
+                    <label class="category-label">
+                        <input type="checkbox" name="categories" value="{{ category }}">
+                        <span>{{ category }}</span>
+                    </label>
+                {% endfor %}
+            </div>
+            <div class="num-questions-section">
+                <h3>Number of Questions:</h3>
+                <input type="number" name="num_questions" min="1" max="50" placeholder='Enter number of questions' required>
+            </div>
+            <button class='btn' type="submit" class="submit-button">Start Test</button>
+        </form>
+    </div>
+    <script src="/static/js/sidebar.js"></script>
+</body> 
+</html>

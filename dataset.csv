@@ -1,0 +1,43 @@
+category,question,answer,score
+java,What is Java?,"Java is a high-level, object-oriented programming language.",1
+java,What is Java?,Java is a programming language used for web and mobile applications.,0.8
+java,What is Java?,Java is a type of coffee.,0
+java,What is JVM?,"JVM stands for Java Virtual Machine, which runs Java bytecode.",1
+java,What is JVM?,JVM is responsible for running Java programs.,0.8
+python,What is JVM?,JVM is a database management system.,0
+python,What is Python?,"Python is an interpreted, high-level programming language.",1
+python,What is Python?,"Python is used for web development, data science, and automation.",0.8
+python,What is Python?,Python is a type of snake.,0
+python,What is a Python list?,"A list in Python is an ordered, mutable collection of elements.",1
+python,What is a Python list?,A list stores multiple values in a single variable.,0.8
+python,What is a Python list?,A list is a way to display items in HTML.,0
+maths,What is the Pythagorean theorem?,It states that a² + b² = c² for a right-angled triangle.,1
+maths,What is the Pythagorean theorem?,It is a mathematical theorem related to triangles.,0.8
+maths,What is the Pythagorean theorem?,It is a rule for calculating interest rates.,0
+maths,What is a prime number?,A prime number is a number greater than 1 that has only two factors: 1 and itself.,1
+maths,What is a prime number?,A prime number is a number that cannot be divided by any other number except 1 and itself.,0.8
+maths,What is a prime number?,A prime number is a type of fraction.,0
+sql,What is SQL?,"SQL stands for Structured Query Language, used for managing databases.",1
+sql,What is SQL?,SQL is used to store and retrieve data from databases.,0.8
+sql,What is SQL?,SQL is a programming language for machine learning.,0
+sql,What is a primary key?,A primary key uniquely identifies each record in a table.,1
+sql,What is a primary key?,A primary key is a unique identifier for database records.,0.8
+sql,What is a primary key?,A primary key is used to sort data in a spreadsheet.,0
+html,What is HTML?,HTML is the standard markup language for creating web pages.,1
+html,What is HTML?,HTML is a language used for structuring content on the web.,0.8
+html,What is HTML?,HTML is a database query language.,0
+html,What is the use of the <a> tag?,The <a> tag is used to create hyperlinks.,1
+html,What is the use of the <a> tag?,The <a> tag is used to link to another web page.,0.8
+html,What is the use of the <a> tag?,The <a> tag is used to add images to a page.,0
+css,What is CSS?,CSS is used to style HTML documents.,1
+css,What is CSS?,CSS controls the layout and appearance of web pages.,0.8
+css,What is CSS?,CSS is a programming language like Java.,0
+css,What is a CSS class?,A CSS class is used to apply styles to multiple elements.,1
+css,What is a CSS class?,A CSS class allows grouping elements for styling.,0.8
+css,What is a CSS class?,A CSS class is a JavaScript function.,0
+html,What is JavaScript?,JavaScript is a programming language used to create interactive web pages.,1
+html,What is JavaScript?,JavaScript is used to add dynamic behavior to web applications.,0.8
+html,What is JavaScript?,JavaScript is a type of Java framework.,0
+html,What is an event in JavaScript?,An event in JavaScript is an action that can be detected by JavaScript code.,1
+html,What is an event in JavaScript?,An event is a user interaction like a click or keypress.,0.8
+html,What is an event in JavaScript?,An event is a type of variable in JavaScript.,0

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Assign Meeting</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/assign_meeting.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+        <link rel="stylesheet" href="/static/sidebar.css">
+    </head>
+    <body>
+        <aside class="sidebar">
+            <!-- Sidebar header -->
+            <header class="sidebar-header">
+                <a href="#" class="header-logo">
+                    <img src="/static/img/logo.png" alt="CodingNepal">
+                </a>
+                <button class="toggler sidebar-toggler">
+                    <span class="material-symbols-rounded">chevron_left</span>
+                </button>
+                <button class="toggler menu-toggler">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+            </header>
+            <nav class="sidebar-nav">
+                <!-- Primary top nav -->
+                <ul class="nav-list primary-nav">
+                    <li class="nav-item">
+                        <a href="/admin/dashboard" class="nav-link">
+                            <span class="nav-icon material-symbols-rounded">dashboard</span>
+                            <span class="nav-label">Dashboard</span>
+                        </a>
+                        <span class="nav-tooltip">Dashboard</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/assign_meeting" class="nav-link active">
+                            <span class="material-symbols-rounded">quiz</span>
+                            <span class="nav-label">Assign Meeting</span>
+                        </a>
+                        <span class="nav-tooltip">Assign Meeting</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/scheduled_meetings" class="nav-link">
+                            <span class="nav-icon material-symbols-rounded">group</span>
+                            <span class="nav-label">View Meetings</span>
+                        </a>
+                        <span class="nav-tooltip">View Meetings</span>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/videos" class="nav-link">
+                            <span class="material-symbols-rounded">animated_images</span>
+                            <span class="nav-label">View Videos</span>
+                        </a>
+                        <span class="nav-tooltip">View Videos</span>
+                    </li>
+                </ul>
+                <!-- Secondary bottom nav -->
+                <ul class="nav-list secondary-nav">
+                    <li class="nav-item">
+                        <a href="/admin/logout" class="nav-link">
+                            <span class="nav-icon material-symbols-rounded">logout</span>
+                            <span class="nav-label">Logout</span>
+                        </a>
+                        <span class="nav-tooltip">Logout</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="content-container">
+            {% block content %}
+            <h2>Assign Meeting</h2>
+            <div class="form-container">
+                <form method="POST">
+                    <div class='grid'>
+                        <div class='form-group'>
+                            <label>Google Meet Link:</label>
+                            <input type="text" name="meet_link" required>
+                        </div>
+    
+                        <div class='form-group'>
+                            <label>Date:</label>
+                            <input type="date" name="meet_date" required>  
+                        </div> 
+    
+                        <div class='form-group'>
+                            <label>Time:</label>
+                            <input type="time" name="meet_time" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class='form-group'>
+                        <label class='select-users'>Select Users:</label><br>
+                        {% for user in users %}
+                            <input type="checkbox" name="user_ids" value="{{ user[0] }}"> {{ user[1] }}<br>
+                        {% endfor %}
+                        <div class='line'></div>
+                    </div>
+                    <br>
+                    <button class='btn' type="submit">Assign Meeting</button>
+                </form>
+            </div>
+            {% endblock %}
+        </div>
+        <script src="/static/js/sidebar.js"></script>
+    </body>
+</html>
